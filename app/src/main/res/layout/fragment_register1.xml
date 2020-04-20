@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RegisterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#679165">
+
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="311dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="32dp"
+            android:background="#40FFFFFF"
+            android:gravity="center"
+            android:text="@string/register_text"
+            android:textColor="@color/feher"
+            android:textColorHint="@color/feher"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/rRegisterName"
+            android:layout_width="243dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="@string/loginName"
+            android:inputType="textPersonName"
+            android:textColor="@color/feher"
+            android:textColorHint="@color/feher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginTextView" />
+
+        <EditText
+            android:id="@+id/rRegisterPassword"
+            android:layout_width="245dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/loginPassword"
+            android:inputType="textPassword"
+            android:textColor="@color/feher"
+            android:textColorHint="@color/feher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rRegisterName" />
+
+        <Button
+            android:id="@+id/rRegisterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginRight="160dp"
+            android:layout_weight="1"
+            android:text="@string/register_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rRegisterPassword" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
